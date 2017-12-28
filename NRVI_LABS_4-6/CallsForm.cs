@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Windows.Forms;
 
-namespace NRVI_LABS_4_6 {
+namespace NazarVeselskyi.Equality {
     public partial class CallsForm : Form {
         private readonly Mobile _mobile;
 

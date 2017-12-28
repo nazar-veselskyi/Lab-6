@@ -1,4 +1,4 @@
-﻿namespace NRVI_LABS_4_6 {
+﻿namespace NazarVeselskyi.Equality {
     public class Mobile {
         private readonly CallsProvider _callsProvider;
         public CallsStorage CallsStorage { get; set; }

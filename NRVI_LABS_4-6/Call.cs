@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace NRVI_LABS_4_6 {
+namespace NazarVeselskyi.Equality {
     public enum CallDirection {
         Incoming,
         Outgoing

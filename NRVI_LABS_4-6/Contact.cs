@@ -1,4 +1,4 @@
-﻿namespace NRVI_LABS_4_6 {
+﻿namespace NazarVeselskyi.Equality {
     public class Contact {
         public readonly string Phone1;
         public readonly string Phone2;

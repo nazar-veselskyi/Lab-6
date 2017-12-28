@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace NRVI_LABS_4_6 {
+namespace NazarVeselskyi.Equality {
     public class CallsStorage {
         public delegate void CallAddedDelegate(Call call);
         public event CallAddedDelegate CallAdded;

@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using NRVI_LABS_4_6;
+using NazarVeselskyi.Equality;
 
 namespace Tests {
     [TestClass]
-    public class Lab6Tests {
+    public class EqualityTests {
         [TestMethod]
         public void TestSortingCalls() {
             Contact contact = new Contact("+380985763454");

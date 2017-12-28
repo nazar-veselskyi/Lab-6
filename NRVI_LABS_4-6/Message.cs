@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace NRVI_LABS_4_6 {
+namespace NazarVeselskyi.Equality {
     public class Message {
         public string User { get; set; }
         public string Text { get; set; }

@@ -2,7 +2,7 @@
 using System.Threading;
 using System.Timers;
 
-namespace NRVI_LABS_4_6 {
+namespace NazarVeselskyi.Equality {
     public enum ContactPhone {
         Phone1,
         Phone2,
