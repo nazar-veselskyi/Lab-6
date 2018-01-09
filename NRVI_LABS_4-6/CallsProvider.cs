@@ -18,8 +18,7 @@ namespace NazarVeselskyi.Equality {
 
         private void RaiseCallReceivedEvent(Call call) {
             var handler = CallReceived;
-            if (handler != null)
-                handler(call);
+            handler?.Invoke(call);
         }
 
         public void SetUpTimer() {

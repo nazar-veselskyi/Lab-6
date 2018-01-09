@@ -22,8 +22,7 @@ namespace NazarVeselskyi.Equality {
         }
 
         public int CompareTo(object obj) {
-            Call other = obj as Call;
-            if (other == null)
+            if (!(obj is Call other))
                 return 1;
 
             return other.CallTime.CompareTo(CallTime);
@@ -34,8 +33,7 @@ namespace NazarVeselskyi.Equality {
         }
 
         public override bool Equals(object obj) {
-            Call other = obj as Call;
-            if (other == null)
+            if (!(obj is Call other))
                 return false;
 
             return CallDirection == other.CallDirection && Contact.Equals(other.Contact);

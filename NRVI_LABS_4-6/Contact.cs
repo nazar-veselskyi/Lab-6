@@ -11,8 +11,7 @@
         }
 
         public override bool Equals(object obj) {
-            Contact other = obj as Contact;
-            if (other == null)
+            if (!(obj is Contact other))
                 return false;
 
             return other.Phone1 == Phone1 && other.Phone2 == Phone2 && other.Phone3 == Phone3;

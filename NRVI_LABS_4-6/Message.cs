@@ -2,9 +2,9 @@
 
 namespace NazarVeselskyi.Equality {
     public class Message {
-        public string User { get; set; }
-        public string Text { get; set; }
-        public DateTime ReceivingTime { get; set; }
+        public string User { get; }
+        public string Text { get; }
+        public DateTime ReceivingTime { get; }
 
         public bool Equals(Message message) {
             return message.User == User && message.Text == Text && message.ReceivingTime == ReceivingTime;

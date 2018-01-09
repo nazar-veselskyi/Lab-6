@@ -16,14 +16,12 @@ namespace NazarVeselskyi.Equality {
 
         private void RaiseCallAddedEvent(Call call) {
             var handler = CallAdded;
-            if (handler != null)
-                handler(call);
+            handler?.Invoke(call);
         }
 
         private void RaiseCallRemovedEvent(Call call) {
             var handler = CallRemoved;
-            if (handler != null)
-                handler(call);
+            handler?.Invoke(call);
         }
 
         public void AddCall(Call call) {
