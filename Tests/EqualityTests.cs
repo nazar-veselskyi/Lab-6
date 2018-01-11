@@ -59,7 +59,7 @@ namespace Tests {
         }
 
         [TestMethod]
-        private void TestCallsEqualityDifferentContacts() {
+        public void TestCallsEqualityDifferentContacts() {
             Call call1 = new Call(_contact1, ContactPhone.Phone1, _date1, CallDirection.Incoming);
             Call call2 = new Call(_contact2, ContactPhone.Phone1, _date1, CallDirection.Incoming);
 
@@ -67,7 +67,7 @@ namespace Tests {
         }
 
         [TestMethod]
-        private void TestCallsEqualityDifferentContactPhone() {
+        public void TestCallsEqualityDifferentContactPhone() {
             Call call1 = new Call(_contact1, ContactPhone.Phone1, _date1, CallDirection.Incoming);
             Call call2 = new Call(_contact1, ContactPhone.Phone2, _date1, CallDirection.Incoming);
 
@@ -75,7 +75,7 @@ namespace Tests {
         }
 
         [TestMethod]
-        private void TestCallsEqualityDifferentDates() {
+        public void TestCallsEqualityDifferentDates() {
             Call call1 = new Call(_contact1, ContactPhone.Phone1, _date1, CallDirection.Incoming);
             Call call2 = new Call(_contact1, ContactPhone.Phone1, _date2, CallDirection.Incoming);
 
@@ -83,7 +83,7 @@ namespace Tests {
         }
 
         [TestMethod]
-        private void TestCallsEqualityDifferentCallDirection() {
+        public void TestCallsEqualityDifferentCallDirection() {
             Call call1 = new Call(_contact1, ContactPhone.Phone1, _date1, CallDirection.Incoming);
             Call call2 = new Call(_contact1, ContactPhone.Phone1, _date1, CallDirection.Outgoing);
 
@@ -91,7 +91,7 @@ namespace Tests {
         }
 
         [TestMethod]
-        private void TestCallsEqualitySameContacts() {
+        public void TestCallsEqualitySameContacts() {
             Call call1 = new Call(_contact1, ContactPhone.Phone1, _date1, CallDirection.Incoming);
             Call call2 = new Call(_contact1, ContactPhone.Phone2, _date2, CallDirection.Outgoing);
 
@@ -99,7 +99,7 @@ namespace Tests {
         }
 
         [TestMethod]
-        private void TestCallsEqualitySameContactPhone() {
+        public void TestCallsEqualitySameContactPhone() {
             Call call1 = new Call(_contact1, ContactPhone.Phone1, _date1, CallDirection.Incoming);
             Call call2 = new Call(_contact2, ContactPhone.Phone1, _date2, CallDirection.Outgoing);
 
@@ -107,7 +107,7 @@ namespace Tests {
         }
 
         [TestMethod]
-        private void TestCallsEqualitySameDate() {
+        public void TestCallsEqualitySameDate() {
             Call call1 = new Call(_contact1, ContactPhone.Phone1, _date1, CallDirection.Incoming);
             Call call2 = new Call(_contact2, ContactPhone.Phone2, _date1, CallDirection.Outgoing);
 
@@ -115,7 +115,7 @@ namespace Tests {
         }
 
         [TestMethod]
-        private void TestCallsEqualitySameCallDirection() {
+        public void TestCallsEqualitySameCallDirection() {
             Call call1 = new Call(_contact1, ContactPhone.Phone1, _date1, CallDirection.Incoming);
             Call call2 = new Call(_contact2, ContactPhone.Phone2, _date1, CallDirection.Outgoing);
 
@@ -123,7 +123,7 @@ namespace Tests {
         }
 
         [TestMethod]
-        private void TestCallsEqualitySameContactAndContactPhone() {
+        public void TestCallsEqualitySameContactAndContactPhone() {
             Call call1 = new Call(_contact1, ContactPhone.Phone1, _date1, CallDirection.Incoming);
             Call call2 = new Call(_contact1, ContactPhone.Phone1, _date2, CallDirection.Outgoing);
 
@@ -131,7 +131,7 @@ namespace Tests {
         }
 
         [TestMethod]
-        private void TestCallsEqualitySameContactAndDate() {
+        public void TestCallsEqualitySameContactAndDate() {
             Call call1 = new Call(_contact1, ContactPhone.Phone1, _date1, CallDirection.Incoming);
             Call call2 = new Call(_contact1, ContactPhone.Phone2, _date1, CallDirection.Outgoing);
 
@@ -139,7 +139,7 @@ namespace Tests {
         }
 
         [TestMethod]
-        private void TestCallsEqualitySameContactAndCallDirection() {
+        public void TestCallsEqualitySameContactAndCallDirection() {
             Call call1 = new Call(_contact1, ContactPhone.Phone1, _date1, CallDirection.Incoming);
             Call call2 = new Call(_contact1, ContactPhone.Phone2, _date2, CallDirection.Incoming);
 
@@ -147,7 +147,7 @@ namespace Tests {
         }
 
         [TestMethod]
-        private void TestCallsEqualitySameContactPhoneAndDate() {
+        public void TestCallsEqualitySameContactPhoneAndDate() {
             Call call1 = new Call(_contact1, ContactPhone.Phone1, _date1, CallDirection.Incoming);
             Call call2 = new Call(_contact2, ContactPhone.Phone1, _date1, CallDirection.Outgoing);
 
@@ -155,7 +155,7 @@ namespace Tests {
         }
 
         [TestMethod]
-        private void TestCallsEqualitySameContactPhoneAndCallDirection() {
+        public void TestCallsEqualitySameContactPhoneAndCallDirection() {
             Call call1 = new Call(_contact1, ContactPhone.Phone1, _date1, CallDirection.Outgoing);
             Call call2 = new Call(_contact2, ContactPhone.Phone1, _date2, CallDirection.Outgoing);
 
@@ -163,7 +163,7 @@ namespace Tests {
         }
 
         [TestMethod]
-        private void TestCallsEqualitySameDateAndCallDirection() {
+        public void TestCallsEqualitySameDateAndCallDirection() {
             Call call1 = new Call(_contact1, ContactPhone.Phone1, _date2, CallDirection.Outgoing);
             Call call2 = new Call(_contact2, ContactPhone.Phone2, _date2, CallDirection.Outgoing);
 
@@ -171,22 +171,22 @@ namespace Tests {
         }
 
         [TestMethod]
-        private void TestCallsEqualitySameCalls() {
+        public void TestCallsEqualitySameCalls() {
             Call call1 = new Call(_contact1, ContactPhone.Phone1, _date2, CallDirection.Outgoing);
             Call call2 = new Call(_contact1, ContactPhone.Phone1, _date2, CallDirection.Outgoing);
 
-            Assert.IsFalse(call1.Equals(call2));
+            Assert.IsTrue(call1.Equals(call2));
         }
 
         [TestMethod]
-        private void TestCallsEqualitySameCall() {
+        public void TestCallsEqualitySameCall() {
             Call call1 = new Call(_contact1, ContactPhone.Phone1, _date2, CallDirection.Outgoing);
 
-            Assert.IsFalse(call1.Equals(call1));
+            Assert.IsTrue(call1.Equals(call1));
         }
 
         [TestMethod]
-        private void TestCallsEqualityDifferentCalls() {
+        public void TestCallsEqualityDifferentCalls() {
             Call call1 = new Call(_contact1, ContactPhone.Phone1, _date2, CallDirection.Outgoing);
             Call call2 = new Call(_contact2, ContactPhone.Phone2, _date1, CallDirection.Incoming);
 
@@ -194,13 +194,13 @@ namespace Tests {
         }
 
         [TestMethod]
-        private void TestContactsEqualitySameContact() {
+        public void TestContactsEqualitySameContact() {
             Contact contact = new Contact(PhoneNumber);
             Assert.IsTrue(contact.Equals(contact));
         }
 
         [TestMethod]
-        private void TestContactsEqualitySameFirstNumber() {
+        public void TestContactsEqualitySameFirstNumber() {
             Contact contact1 = new Contact(PhoneNumber);
             Contact contact2 = new Contact(PhoneNumber, "+380677536190");
 
@@ -208,7 +208,7 @@ namespace Tests {
         }
 
         [TestMethod]
-        private void TestContactsEqualitySameFirstNumber2() {
+        public void TestContactsEqualitySameFirstNumber2() {
             Contact contact1 = new Contact(PhoneNumber);
             Contact contact2 = new Contact(PhoneNumber, "+380677536190", "+380636104903");
 
@@ -216,7 +216,7 @@ namespace Tests {
         }
 
         [TestMethod]
-        private void TestContactsEqualitySameNumberAsDifferentPhones() {
+        public void TestContactsEqualitySameNumberAsDifferentPhones() {
             Contact contact1 = new Contact(PhoneNumber);
             Contact contact2 = new Contact("", PhoneNumber);
 
@@ -224,7 +224,7 @@ namespace Tests {
         }
 
         [TestMethod]
-        private void TestContactsEqualitySameNumberAsDifferentPhones2() {
+        public void TestContactsEqualitySameNumberAsDifferentPhones2() {
             Contact contact1 = new Contact(PhoneNumber);
             Contact contact2 = new Contact("", "", PhoneNumber);
 
@@ -232,7 +232,7 @@ namespace Tests {
         }
 
         [TestMethod]
-        private void TestContactsEqualitySameNumberAsDifferentPhones3() {
+        public void TestContactsEqualitySameNumberAsDifferentPhones3() {
             Contact contact1 = new Contact(PhoneNumber);
             Contact contact2 = new Contact(PhoneNumber, "", PhoneNumber);
 
@@ -240,7 +240,7 @@ namespace Tests {
         }
 
         [TestMethod]
-        private void TestContactsEqualitySameNumberAsDifferentPhones4() {
+        public void TestContactsEqualitySameNumberAsDifferentPhones4() {
             Contact contact1 = new Contact(PhoneNumber);
             Contact contact2 = new Contact(PhoneNumber, PhoneNumber, PhoneNumber);
 

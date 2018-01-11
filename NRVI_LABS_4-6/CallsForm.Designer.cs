@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("");
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("");
             this.CallsListView = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -43,9 +43,9 @@
             this.columnHeader1,
             this.columnHeader2});
             this.CallsListView.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1,
-            listViewItem2});
-            this.CallsListView.Location = new System.Drawing.Point(12, 163);
+            listViewItem3,
+            listViewItem4});
+            this.CallsListView.Location = new System.Drawing.Point(12, 12);
             this.CallsListView.Name = "CallsListView";
             this.CallsListView.Size = new System.Drawing.Size(414, 261);
             this.CallsListView.TabIndex = 1;
@@ -63,7 +63,7 @@
             // 
             // StartButton
             // 
-            this.StartButton.Location = new System.Drawing.Point(12, 439);
+            this.StartButton.Location = new System.Drawing.Point(12, 286);
             this.StartButton.Name = "StartButton";
             this.StartButton.Size = new System.Drawing.Size(75, 23);
             this.StartButton.TabIndex = 7;
@@ -72,7 +72,7 @@
             // 
             // StopButton
             // 
-            this.StopButton.Location = new System.Drawing.Point(112, 439);
+            this.StopButton.Location = new System.Drawing.Point(93, 286);
             this.StopButton.Name = "StopButton";
             this.StopButton.Size = new System.Drawing.Size(75, 23);
             this.StopButton.TabIndex = 8;
@@ -83,7 +83,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(438, 474);
+            this.ClientSize = new System.Drawing.Size(438, 321);
             this.Controls.Add(this.StopButton);
             this.Controls.Add(this.StartButton);
             this.Controls.Add(this.CallsListView);

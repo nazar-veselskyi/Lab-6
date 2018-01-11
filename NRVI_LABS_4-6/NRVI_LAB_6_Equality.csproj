@@ -54,7 +54,6 @@
     <Compile Include="CallsForm.Designer.cs">
       <DependentUpon>CallsForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Message.cs" />
     <Compile Include="Mobile.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
